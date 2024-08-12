@@ -14,7 +14,7 @@ class ShortnerCreateAPIView(CreateAPIView):
     serializer_class = LinkSerializer
     
 class Redirector(View):
-    def get(self,request,nano_lin,*args,**kwargs):
-        nano_link = settings.HOST_URL+'/'+self.kwargs['nano_link']
-        redirect_link = Link.objects.get(nano_link=nano_link).first().original_link
-        return redirect(redirect_link)        
+    def get(self,request,nano_link,*args,**kwargs):
+        shortner_link = settings.HOST_URL+'/'+self.kwargs['nano_link']
+        redirect_link = Link.objects.filter(nano_link=shortner_link).first().original_link
+        return redirect(redirect_link)    
