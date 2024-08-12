@@ -5,10 +5,8 @@
 ## Features
 
 * **Link Shortening:** Create, read, update, and delete shortened URLs with ease.
-* **Analytics Tracking:** Monitor link performance, including click rates, user locations, and device types.
 * **Custom URL Slugs:** Allow users to create custom slugs for their shortened URLs.
 * **Expiration Management:** Set expiration dates for links and manage expired URLs.
-* **User Authentication and Authorization:** Implement secure user authentication and authorization mechanisms.
 * **API Rate Limiting:** Protect against abuse by setting limits on API requests.
 
 ## Technologies
@@ -16,7 +14,6 @@
 * **Django:** Python's high-level web framework for rapid development.
 * **Django REST Framework:** Powerful toolkit for building web APIs.
 * **SQLite:** Lightweight and easy-to-manage database for storing link data.
-* **[Other technologies used, e.g., Redis, Celery, Docker, etc.]**
 
 ## Getting Started
 
