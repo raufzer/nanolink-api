@@ -42,7 +42,7 @@
 4. Configure database settings (update settings.py with your database credentials).
 5. Run migrations:
    ```bash
-python manage.py migrate
+   python manage.py migrate
 6. Start the development server:
    ```bash
    python manage.py runserver
